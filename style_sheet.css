@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+p, li, h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+  background-color: #3ACDB8;
+}
+
+#page-wrapper{
+  display: grid;
+  height: 150em;
+  grid-template-rows: 1fr 24fr;
+  padding: 1em;
+  
+}
+
+#company-logo {
+  height: 3em;
+  fill: ;
+  width: 3em;
+  
+}
+
+#header {
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  background-color: #203C3E;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+}
+
+a:hover{
+  color: #F3CD69;
+}
+
+#navbar {
+  width: 40em;
+  display: flex;
+  justify-content: center
+}
+
+
+
+
+#navbar{
+  display: flex;
+}
+
+.nav-link {
+  list-style: none;
+}
+
+.nav-link li{
+  display: inline-block;
+  padding: 0em 3em;
+}
+
+#logo h1 {
+  display: inline-block;
+  font-family: 'Ubuntu';
+  color: #F3CD69;
+  padding-left: 5px;
+}
+
+#content{
+  background-color: #DEF1D1;
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  border-radius: 0px 0px 20px 20px;
+}
+
+#video {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 4fr 3fr;
+  background-color: rgba(30,30,30, 20%);
+  
+}
+
+#actual-video {
+  background-color: black;
+  margin: auto auto auto auto;
+  padding: 5px;
+}
+#video-iframe {
+  background-color: black;
+  border: solid;
+}
+
+h2{
+  font-size: 30px;  
+}
+
+hr{
+  color: white;
+}
+
+
+
+
+#video-description {
+  color: white;
+  background-color: #203C3E;
+  margin-top: 19%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 19%;
+  text-align: center;
+  padding: 5% 5% 5% 5%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+  
+}
+
+
+
+#shop {
+  display: flex;
+  background-color: #DEF1D1;
+  justify-content: space-around;
+  
+}
+
+#item {
+  display: grid;
+  background-color: #203C3E;
+  font-family: 'Ubuntu';
+  color: white;
+  width: 25%;
+  margin: 4rem;
+  grid-template-rows: 3fr 2fr;
+  border: solid;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+#item:hover {
+  animation-name: offer-item;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes offer-item{
+  from {background-color: #203C3E;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);}
+  to {background-color: #447275;
+      box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.25);}
+  }
+
+#product-image {
+  display: block;
+  margin: auto;
+  margin-top: 2em;
+}
+
+#product-description {
+  text-align: center;
+
+}
+
+
+
+#about {
+  
+  background-color: pink;
+  
+}
+
+#contact{
+  
+  background-color: purple;
+  
+}
+
+.gpu-image {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border: solid;
+}
+
+.gpu-features{
+  margin-left: 15%;
+  text-align:left;
+}

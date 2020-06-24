@@ -11,15 +11,24 @@ body{
 
 #page-wrapper{
   display: grid;
-  height: 150em;
+  height: 117rem;
   grid-template-rows: 1fr 24fr;
   padding: 1em;
   
 }
 
+@media (max-width: 600px){
+  #video{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  
+}
+
 #company-logo {
   height: 3em;
-  fill: ;
   width: 3em;
   
 }
@@ -74,8 +83,9 @@ a:hover{
 #content{
   background-color: #DEF1D1;
   display: grid;
-  grid-template-rows: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 1fr;
   border-radius: 0px 0px 20px 20px;
+  height: 110rem;
 }
 
 #video {
@@ -83,17 +93,23 @@ a:hover{
   grid-template-rows: 1fr;
   grid-template-columns: 4fr 3fr;
   background-color: rgba(30,30,30, 20%);
-  
 }
 
 #actual-video {
   background-color: black;
   margin: auto auto auto auto;
   padding: 5px;
+  width: 90%;
+  height: 80%;
 }
 #video-iframe {
   background-color: black;
   border: solid;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
 }
 
 h2{
@@ -168,19 +184,6 @@ hr{
 }
 
 
-
-#about {
-  
-  background-color: pink;
-  
-}
-
-#contact{
-  
-  background-color: purple;
-  
-}
-
 .gpu-image {
   width: 70%;
   display: block;
@@ -191,4 +194,36 @@ hr{
 .gpu-features{
   margin-left: 15%;
   text-align:left;
+}
+
+
+
+#contact{
+  
+  background-color: rgba(30,30,30, 20%);
+  border-radius: 0px 0px 20px 20px;
+  
+}
+
+#email-contact{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5% 5% 5% 5%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0, 0.2);
+  margin: 5% 10% 5% 10%;
+  background-color: #203C3E;
+
+}
+
+h3{
+   font-family: 'Ubuntu', sans-serif;
+}
+
+#email {
+  border-radius: 20;
+}
+#btn{
+  border-radius: 20;
 }
